@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programa - AgroFlow</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="app-root">
+      <div class="login-box">
+        <img src="img/logo-agroflow.png" alt="AgroFlow Logo" class="logo" />
+
+        <!-- Navegação -->
+        <nav class="tab-menu">
+          <a href="historico.html" class="tab">Histórico</a>
+          <a href="#" class="tab active">Programa</a>
+          <a href="manual.html" class="tab">Manual</a>
+        </nav>
+
+        <!-- Lista de sensores -->
+        <div class="sensor-list">
+          <div class="sensor-card">
+            <div class="sensor-info">
+              <h3>Sensor 1</h3>
+              <p>Umidade: <span class="sensor-value">45%</span></p>
+            </div>
+            <label class="switch">
+              <input type="checkbox" checked />
+              <span class="slider"></span>
+            </label>
+          </div>
+
+          <div class="sensor-card">
+            <div class="sensor-info">
+              <h3>Sensor 2</h3>
+              <p>Temperatura: <span class="sensor-value">28°C</span></p>
+            </div>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </div>
+
+          <div class="sensor-card">
+            <div class="sensor-info">
+              <h3>Sensor 3</h3>
+              <p>Umidade: <span class="sensor-value">63%</span></p>
+            </div>
+            <label class="switch">
+              <input type="checkbox" checked />
+              <span class="slider"></span>
+            </label>
+          </div>
+
+          <div class="sensor-card">
+            <div class="sensor-info">
+              <h3>Sensor 4</h3>
+              <p>Temperatura: <span class="sensor-value">25°C</span></p>
+            </div>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+
+        <button type="button" class="btn-primary">Salvar</button>
+      </div>
+    </div>
+  </body>
+</html>
