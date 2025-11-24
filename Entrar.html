@@ -13,61 +13,59 @@
         <img src="img/logo-agroflow.png" alt="AgroFlow Logo" class="logo" />
 
         <!-- Navegação -->
-        <nav class="tab-menu">
-          <a href="historico.html" class="tab">Histórico</a>
-          <a href="#" class="tab active">Programa</a>
-          <a href="manual.html" class="tab">Manual</a>
+        <nav class="segmented-menu">
+          <a href="#" class="segmented-item active">Programa</a>
+          <a href="manual.html" class="segmented-item">Manual</a>
         </nav>
 
         <!-- Lista de sensores -->
-        <div class="sensor-list">
-          <div class="sensor-card">
-            <div class="sensor-info">
-              <h3>Sensor 1</h3>
-              <p>Umidade: <span class="sensor-value">45%</span></p>
+        <div class="program-list">
+          <div class="program-card">
+            <div class="program-info">
+              <h2 class="program-title">A</h2>
+              <p>Umidade: <span>55%</span></p>
+              <p>Temperatura: <span>24°C</span></p>
+              <p>Bomba: <span class="closed">Fechada</span></p>
             </div>
-            <label class="switch">
-              <input type="checkbox" checked />
-              <span class="slider"></span>
-            </label>
+            <button class="circle-btn"></button>
           </div>
 
-          <div class="sensor-card">
-            <div class="sensor-info">
-              <h3>Sensor 2</h3>
-              <p>Temperatura: <span class="sensor-value">28°C</span></p>
+          <div class="program-card">
+            <div class="program-info">
+              <h2 class="program-title">B</h2>
+              <p>Umidade: <span>98%</span></p>
+              <p>Temperatura: <span>15°C</span></p>
+              <p>Bomba: <span class="open">Aberta</span></p>
             </div>
-            <label class="switch">
-              <input type="checkbox" />
-              <span class="slider"></span>
-            </label>
+            <button class="circle-btn"></button>
           </div>
 
-          <div class="sensor-card">
-            <div class="sensor-info">
-              <h3>Sensor 3</h3>
-              <p>Umidade: <span class="sensor-value">63%</span></p>
+          <a href="atividade.html" class="program-card">
+            <div class="program-info">
+              <h2 class="program-title">C</h2>
+              <p>Umidade: <span>35%</span></p>
+              <p>Temperatura: <span>24°C</span></p>
+              <p>Bomba: <span class="closed">Fechada</span></p>
             </div>
-            <label class="switch">
-              <input type="checkbox" checked />
-              <span class="slider"></span>
-            </label>
-          </div>
 
-          <div class="sensor-card">
-            <div class="sensor-info">
-              <h3>Sensor 4</h3>
-              <p>Temperatura: <span class="sensor-value">25°C</span></p>
-            </div>
-            <label class="switch">
-              <input type="checkbox" />
-              <span class="slider"></span>
-            </label>
-          </div>
+            <button class="circle-btn" type="button"></button>
+          </a>
+
+          <a href="adicionar.html" class="add-box">
+            <span>+</span>
+          </a>
         </div>
-
-        <button type="button" class="btn-primary">Salvar</button>
       </div>
     </div>
+
+    <script>
+      const buttons = document.querySelectorAll(".circle-btn");
+
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          btn.classList.toggle("active");
+        });
+      });
+    </script>
   </body>
 </html>
